@@ -17,7 +17,7 @@ namespace SubnauticaFixes
                 // Initialize Harmony.
                 HarmonyInstance = HarmonyInstance.Create("com.osubmarin.subnauticafixes");
 
-                // Fix Sign loading problem (see https://www.youtube.com/).
+                // Fix Sign loading problem (see https://youtu.be/8eGj40Xzkag).
                 var updateScaleMethod = typeof(uGUI_SignInput).GetMethod("UpdateScale", BindingFlags.NonPublic | BindingFlags.Instance);
                 var updateScalePostfix = typeof(uGUI_SignInputFixer).GetMethod("UpdateScale_Postfix", BindingFlags.Public | BindingFlags.Static);
                 HarmonyInstance.Patch(updateScaleMethod, null, new HarmonyMethod(updateScalePostfix));

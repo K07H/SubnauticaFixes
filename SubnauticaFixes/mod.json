@@ -3,7 +3,7 @@
   "DisplayName": "SubnauticaFixes",
   "Author": "OSubMarin",
   "Version": "1.0.0",
-  "Requires": [ "0Harmony.dll" ],
+  "Requires": [ "0Harmony-1.2.0.1.dll" ],
   "Enable": true,
   "Game": "Subnautica",
   "AssemblyName": "SubnauticaFixes.dll",

@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace SubnauticaFixes
 {
     /// <summary>
-    /// Will fix the signs loading vanilla bug (see https://www.youtube.com/).
-    /// Requires Harmony.
+    /// Will fix the signs loading vanilla bug (see https://youtu.be/8eGj40Xzkag).
+    /// Note that the initial Exceptions will still be raised upon loading and logged in Player.log file.
+    /// That's because this fix is applied as a postfix method (so Signs are fixed after their initial loading failure, by simply reloading their current state).
     /// </summary>
     public class uGUI_SignInputFixer
     {
@@ -22,8 +24,6 @@ namespace SubnauticaFixes
                 {
                     // Get Sign component from this uGUI_SignInput parent.
                     Sign sign = __instance.transform.parent.GetComponent<Sign>();
-                    if (sign == null) // If parent doesn't have the Sign component, get it from GameObject.
-                        sign = __instance.gameObject.GetComponent<Sign>();
                     // If we were able to get the Sign component for this uGUI_SignInput.
                     if (sign != null)
                     {
@@ -36,7 +36,7 @@ namespace SubnauticaFixes
     }
 
     /// <summary>
-    /// MonoBehaviour component attached to signs objects that fixes their loading problem.
+    /// MonoBehaviour component attached to signs objects to fix their loading problem.
     /// </summary>
     public class SignFixerComponent : MonoBehaviour
     {
