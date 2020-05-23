@@ -5,8 +5,9 @@ namespace SubnauticaFixes
 {
     /// <summary>
     /// Will fix the signs loading bug (see https://youtu.be/8eGj40Xzkag).
-    /// Note that the initial Exceptions will still be raised upon loading and logged in Player.log file.
-    /// That's because this fix is applied as a postfix method (in other words signs are fixed after their initial loading failure).
+    /// This bug happens in vanilla version of the game (no mods installed).
+    /// Note that the initial exceptions will still be raised upon loading (and logged in Player.log file).
+    /// That's because this fix is applied as a postfix method (in other words, signs are fixed after their initial loading failure).
     /// </summary>
     public class uGUI_SignInputFixer
     {
