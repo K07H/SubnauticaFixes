@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubnauticaFixes", "SubnauticaFixes\SubnauticaFixes.csproj", "{0B3D0605-F4E7-4343-A5CA-679E37E1580B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugBZ|Any CPU = DebugBZ|Any CPU
+		DebugSN|Any CPU = DebugSN|Any CPU
+		ReleaseBZ|Any CPU = ReleaseBZ|Any CPU
+		ReleaseSN|Any CPU = ReleaseSN|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.DebugBZ|Any CPU.ActiveCfg = DebugBZ|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.DebugBZ|Any CPU.Build.0 = DebugBZ|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.DebugSN|Any CPU.ActiveCfg = DebugSN|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.DebugSN|Any CPU.Build.0 = DebugSN|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.ReleaseBZ|Any CPU.ActiveCfg = ReleaseSN|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.ReleaseBZ|Any CPU.Build.0 = ReleaseSN|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.ReleaseSN|Any CPU.ActiveCfg = ReleaseSN|Any CPU
+		{0B3D0605-F4E7-4343-A5CA-679E37E1580B}.ReleaseSN|Any CPU.Build.0 = ReleaseSN|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E826B352-9E34-454B-A658-D556D69DA3D6}
+	EndGlobalSection
+EndGlobal

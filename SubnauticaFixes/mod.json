@@ -1,0 +1,12 @@
+{
+  "Id": "SubnauticaFixes",
+  "DisplayName": "SubnauticaFixes",
+  "Author": "OSubMarin",
+  "Version": "1.0.0",
+  "Requires": [ "0Harmony.dll" ],
+  "Enable": true,
+  "Game": "Subnautica",
+  "AssemblyName": "SubnauticaFixes.dll",
+  "EntryMethod": "SubnauticaFixes.QPatch.Patch",
+  "Config": {}
+}
