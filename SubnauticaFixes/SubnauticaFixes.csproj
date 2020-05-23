@@ -133,8 +133,12 @@
     <Compile Include="uGUI_SignInputFixer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="mod.json" />
-    <None Include="modBZ.json" />
+    <None Include="mod.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="modBZ.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
