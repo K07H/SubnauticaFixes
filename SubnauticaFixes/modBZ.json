@@ -2,7 +2,7 @@
   "Id": "SubnauticaFixes",
   "DisplayName": "SubnauticaFixes",
   "Author": "OSubMarin",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Dependencies": [ "0Harmony-1.2.0.1.dll" ],
   "Enable": true,
   "Game": "BelowZero",
