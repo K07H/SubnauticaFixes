@@ -4,9 +4,9 @@ using UnityEngine;
 namespace SubnauticaFixes
 {
     /// <summary>
-    /// Will fix the signs loading vanilla bug (see https://youtu.be/8eGj40Xzkag).
+    /// Will fix the signs loading bug (see https://youtu.be/8eGj40Xzkag).
     /// Note that the initial Exceptions will still be raised upon loading and logged in Player.log file.
-    /// That's because this fix is applied as a postfix method (so Signs are fixed after their initial loading failure, by simply reloading their current state).
+    /// That's because this fix is applied as a postfix method (in other words signs are fixed after their initial loading failure).
     /// </summary>
     public class uGUI_SignInputFixer
     {
@@ -36,7 +36,7 @@ namespace SubnauticaFixes
     }
 
     /// <summary>
-    /// MonoBehaviour component attached to signs objects to fix their loading problem.
+    /// MonoBehaviour component attached to sign objects to fix their loading problem.
     /// </summary>
     public class SignFixerComponent : MonoBehaviour
     {
